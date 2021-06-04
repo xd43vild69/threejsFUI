@@ -1,1 +1,3 @@
-console.log("hello3");
+import {upperCase} from 'lodash'
+console.log("hello dev");
+console.log(upperCase("thisIsANewTestToCallLodash")); 
