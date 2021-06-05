@@ -9,7 +9,7 @@
     "start": "webpack serve --open 'Firefox'"
   },
   "keywords": [],
-  "author": "",
+  "author": "D13",
   "license": "ISC",
   "devDependencies": {
     "html-webpack-plugin": "^5.3.1",
