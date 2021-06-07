@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-export function testThree(){
+export function baseThreeJS(){
     // Canvas
     const canvas = document.querySelector('canvas.webgl')
 
