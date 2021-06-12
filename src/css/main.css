@@ -1,4 +1,19 @@
 body {
   background-color: #6b6b6b;
 }
+
+.mobile-menu {
+  max-width: 2%;
+  height: auto;
+}
+
+.mobile-menu-exit {
+  max-width: 2%;
+  height: auto;
+}
+
+.img-cta {
+  max-width: 3%;
+  height: auto;
+}
 /*# sourceMappingURL=main.css.map */
