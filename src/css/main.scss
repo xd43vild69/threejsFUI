@@ -1,16 +1,41 @@
-body {background-color: rgb(107, 107, 107);}
+:root{
+    --primary-color:rgb(87, 87, 202);
+}
+
+body {
+  background-color: rgb(107, 107, 107);
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar {
+  background-color: rgb(112, 120, 136);
+  padding: 1em;
+  .logo {
+    background-color: rgb(146, 156, 177);
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+
+    span{
+        color: var(--primary-color);
+    }
+  }
+}
 
 .mobile-menu {
-    max-width:2%;
-    height:auto;
+  max-width: 2%;
+  height: auto;
 }
 
 .mobile-menu-exit {
-    max-width:2%;
-    height:auto;
+  max-width: 2%;
+  height: auto;
 }
 
 .img-cta {
-    max-width:3%;
-    height:auto;
+  max-width: 3%;
+  height: auto;
 }

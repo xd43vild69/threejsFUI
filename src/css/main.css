@@ -1,5 +1,28 @@
+:root {
+  --primary-color:rgb(87, 87, 202);
+}
+
 body {
   background-color: #6b6b6b;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #707888;
+  padding: 1em;
+}
+
+.navbar .logo {
+  background-color: #929cb1;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .logo span {
+  color: var(--primary-color);
 }
 
 .mobile-menu {
