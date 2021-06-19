@@ -1,25 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color: rgb(87, 87, 202);
-  --secondary-color: rgb(112, 120, 136);
-  --background-color: rgb(107, 107, 107);
-  --enlight-color: rgb(146, 156, 177);
-  --link-color: rgb(75, 11, 48);
+  --primary-color: #007AF3;
 }
 
 body {
-  background-color: var(--background-color);
+  background: #F2F2F2;
   margin: 0;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 
 .navbar {
-  background-color: var(--secondary-color);
+  background: white;
   padding: 1em;
 }
 
 .navbar .logo {
-  background-color: var(--enlight-color);
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -41,8 +36,12 @@ body {
   place-content: space-between;
 }
 
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
 a {
-  color: var(--link-color);
+  color: #444444;
 }
 
 ul {
@@ -55,94 +54,91 @@ section {
   padding: 5em 2em;
 }
 
-.main-section {
+.hero {
   text-align: center;
 }
 
 .left-col .subhead {
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 0.3em;
+  color: gray;
+  letter-spacing: .3em;
 }
 
 .left-col h1 {
   font-size: 2.5em;
   line-height: 1.3em;
-  margin-top: 0.2em;
+  margin-top: .2em;
 }
 
 .left-col .primary-cta {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   color: white;
   text-decoration: none;
-  padding: 0.6em 1.3em;
+  padding: .6em 1.3em;
   font-size: 1.4em;
-  border-radius: 0.5em;
+  border-radius: 5em;
   font-weight: bold;
   display: inline-block;
 }
 
-.left-col .watch-cta {
+.left-col .watch-video-cta {
   display: block;
-  margin: 1em;
+  margin-top: 1em;
 }
 
-.left-col .watch-cta img {
-  margin-right: 0.5em;
-}
-
-.img-cta-video {
-  margin-top: 3em;
-  max-width: 10%;
+.left-col .watch-video-cta img {
+  margin-right: .5em;
 }
 
 .hero-img {
+  width: 70%;
   margin-top: 3em;
-  max-width: 70%;
-  height: auto;
 }
 
 section.features-section {
-  background-color: #424242;
+  background: #20272E;
   color: white;
 }
 
-.features-list {
+ul.features-list {
   margin: 0;
-  padding-left: 0.1em;
+  padding-left: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
-.features-list li {
+ul.features-list li {
   font-size: 1.1em;
   margin-bottom: 1em;
   margin-left: 2em;
   position: relative;
 }
 
-.features-list li:before {
-  content: "";
+ul.features-list li:before {
+  content: '';
   left: -2em;
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url("../images/sanitazer.svg");
+  background-image: url("https://assets.codepen.io/2621168/bullet.svg");
   background-size: contain;
-  margin-right: 5em;
-  left: -2em;
+  margin-right: .5em;
 }
 
 .features-section img {
   display: none;
 }
 
-.testimonial-section {
-  background-color: var(--primary-color);
+.testimonials-section {
+  background: var(--primary-color);
   color: white;
 }
 
-.testimonial-section ul li {
-  opacity: 0.8;
-  background-color: #3e404b;
+.testimonials-section li {
+  background: #006BD6;
   text-align: center;
   padding: 2em 1em;
   width: 80%;
@@ -150,10 +146,10 @@ section.features-section {
   border-radius: 1em;
 }
 
-.testimonial-section ul li img {
+.testimonials-section li img {
   width: 5em;
   height: 5em;
-  border: 5px solid #3e404b;
+  border: 5px solid #006BD6;
   border-radius: 50%;
   margin-top: -4.5em;
 }
@@ -165,15 +161,14 @@ h2 {
 label {
   display: block;
   font-size: 1.2em;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
-input,
-textarea {
+input, textarea {
   width: 100%;
-  padding: 0.8em;
+  padding: .8em;
   margin-bottom: 1em;
-  border-radius: 0.3em;
+  border-radius: .3em;
   border: 1px solid gray;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -183,12 +178,12 @@ input[type="submit"] {
   background-color: var(--primary-color);
   color: white;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.3em;
   border: none;
   margin-bottom: 5em;
   border-radius: 5em;
   display: inline-block;
-  padding: 0.8em 2em;
+  padding: .8em 2em;
   width: unset;
   cursor: pointer;
 }
@@ -208,7 +203,7 @@ nav {
   width: 66%;
   right: 0;
   top: 0;
-  background-color: #32313b;
+  background: #20272E;
   height: 100vh;
   padding: 1em;
 }
@@ -221,7 +216,7 @@ nav li a {
   color: white;
   text-decoration: none;
   display: block;
-  padding: 0.5em;
+  padding: .5em;
   font-size: 1.3em;
   text-align: right;
 }
@@ -232,13 +227,12 @@ nav li a:hover {
 
 .mobile-menu-exit {
   float: right;
-  margin: 0.5em;
+  margin: .5em;
   cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
-  .mobile-menu,
-  .mobile-menu-exit {
+  .mobile-menu, .mobile-menu-exit {
     display: none;
   }
   .navbar .container {
@@ -271,7 +265,7 @@ nav li a:hover {
   .navbar nav a {
     color: black;
     font-size: 1em;
-    padding: 0.1em 1em;
+    padding: .1em 1em;
   }
   .navbar nav ul.primary-nav {
     margin: 0;
@@ -284,11 +278,117 @@ nav li a:hover {
     border: 3px solid var(--primary-color);
     font-weight: bold;
     border-radius: 5em;
-    margin-top: -0.2em;
+    margin-top: -.2em;
   }
   .navbar nav li.go-premium-cta a:hover {
     background: var(--primary-color);
     color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .hero .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .left-col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero-img {
+    width: 30%;
+    margin-right: 8em;
+  }
+  .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .primary-cta {
+    margin-right: 1em;
+  }
+  ul.features-list {
+    display: block;
+    margin-left: 5em;
+  }
+  ul.features-list li {
+    font-size: 1.4em;
+  }
+  ul.features-list li:before {
+    width: 30px;
+    height: 30px;
+  }
+  .features-section {
+    position: relative;
+  }
+  .features-section img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -2em;
+  }
+  .testimonials-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .testimonials-section ul li {
+    margin: 0 1em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact-right iframe {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .features-section:before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .features-section:after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url("https://assets.codepen.io/2621168/dots.svg") no-repeat;
+    left: 4.5em;
+    top: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

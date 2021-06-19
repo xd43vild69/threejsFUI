@@ -1,12 +1,16 @@
 import { upperCase } from "lodash";
 import { baseThreeJS } from "./baseThree.js";
 import { animationThree } from "./animationThree.js";
+import "./css/main.scss";
 
 console.log(upperCase("HelloDev3DWorld"));
+
+
 
 //baseThreeJS();
 //animationThree();
 
+/*
 var name2 = "name2";
 
 const printFinal = (name) => {
@@ -34,3 +38,4 @@ const genderEvaluation2 = (gender) => {
 const genderResult = genderEvaluation2("F");
 
 console.log(genderResult());
+*/
