@@ -11,7 +11,7 @@
     "build": "webpack"
   },
   "keywords": [],
-  "author": "D13",
+  "author": "xd43vild69",
   "license": "ISC",
   "devDependencies": {
     "css-minimizer-webpack-plugin": "^3.0.1",
