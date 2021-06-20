@@ -9,6 +9,11 @@ body {
   font-family: 'Poppins';
 }
 
+input:focus, textarea:focus {
+  background-color: var(--primary-color);
+  color: white;
+}
+
 .navbar {
   background: white;
   padding: 1em;

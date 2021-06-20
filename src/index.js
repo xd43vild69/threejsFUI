@@ -1,6 +1,6 @@
 import { upperCase } from "lodash";
-import { baseThreeJS } from "./baseThree.js";
-import { animationThree } from "./animationThree.js";
+import { baseThreeJS } from "./js/baseThree.js";
+import { animationThree } from "./js/animationThree.js";
 import "./css/main.scss";
 
 console.log(upperCase("HelloDev3DWorld"));
