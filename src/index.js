@@ -2,9 +2,9 @@ import { upperCase } from "lodash";
 import { baseThreeJS } from "./js/baseThree.js";
 import { animationThree } from "./js/animationThree.js";
 import "./css/main.scss";
+import "./css/main-bootstrap.scss";
 
 console.log(upperCase("HelloDev3DWorld"));
-
 
 
 //baseThreeJS();

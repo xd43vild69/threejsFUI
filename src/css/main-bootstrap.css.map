@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,EAAC,SAAS,EAAE,KAAK;EACnB,AAAA,WAAW,CAAA;IACP,KAAK,EAAE,GAAG;GACb;;;AAGL,AAAA,IAAI,AAAA,QAAQ,CAAA;EACR,OAAO,EAAE,KAAK;EACd,OAAO,EAAE,EAAE;EACX,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "main-bootstrap.scss"
+    ],
+    "names": [],
+    "file": "main-bootstrap.css"
+}

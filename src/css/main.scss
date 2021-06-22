@@ -27,7 +27,8 @@ body{
 }
 
 header{
-    background-color: rgb(12, 29, 56);    
+    //background-color: rgb(12, 29, 56);    
+    background-color: rgb(35, 61, 87);
     grid-area: header;
 }
 
@@ -38,12 +39,14 @@ header{
 
 section:nth-of-type(1){
     grid-area: sect1;
-    background-color: rgb(128, 210, 199);
+    //background-color: rgb(128, 210, 199);
+    background-color: rgb(93, 143, 161);
 }
 
 section:nth-of-type(2){
     grid-area: sect2;
-    background-color: rgb(194, 228, 200);
+    //background-color: rgb(194, 228, 200);
+    background-color: rgb(93, 143, 161);
 }
 
 section:nth-of-type(3){
